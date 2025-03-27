@@ -73,7 +73,7 @@ const start = async () => {
     try {
         // Fix: Replace "yourDatabaseName" with the actual DB name
         const connectionDb = await mongoose.connect(
-            "mongodb+srv://rachitpatel6337:7LAOvYrbrZBZC7WP@cluster0.bn7mh.mongodb.net/<YOUR_DATABASE_NAME>",
+            "process.env.MONGO",
             { useNewUrlParser: true, useUnifiedTopology: true }
         );
 
